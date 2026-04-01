@@ -1049,6 +1049,9 @@ body {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    height: auto;
+    overflow-y: visible;
+    overflow-x: clip;
   }
 
   .title-group {
@@ -1245,6 +1248,12 @@ body {
   @media (max-width: 768px) {
     & {
       overflow-x: hidden;
+    }
+
+    .hero-content {
+      height: auto;
+      overflow-y: visible;
+      overflow-x: clip;
     }
 
     .main-content {
