@@ -1,6 +1,7 @@
+import './styles/main.scss';
 import { Offcanvas } from 'bootstrap';
 import { register } from 'swiper/element/bundle';
-import { initI18n } from './i18n.js';
+import { initI18n, getStoredLang, messages } from './i18n.js';
 
 initI18n();
 register();
@@ -346,13 +347,16 @@ if (mobileNav) {
 /** contact page: 點擊官方信箱按鈕時複製信箱 */
 const copyEmailBtn = document.querySelector('[data-copy-email]');
 if (copyEmailBtn) {
+  const lang = getStoredLang();
+  const dict = messages[lang] || messages['zh-TW'];
+  const copyToastMessage = dict.contact_copy_toast || '已複製信箱帳號';
   let toastTimer = null;
   let copyToast = null;
   const showCopyToast = () => {
     if (!copyToast) {
       copyToast = document.createElement('div');
       copyToast.className = 'copy-toast';
-      copyToast.textContent = '已複製信箱帳號';
+      copyToast.textContent = copyToastMessage;
       document.body.appendChild(copyToast);
     }
     copyToast.classList.add('is-show');

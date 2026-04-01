@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title data-i18n="contact_page_title">聯繫我們</title>
+    <link rel="icon" type="image/png" href="./src/assets/img/img_logo_250.png" />
     <style>
       html {
         background-color: #0f0f0f;
@@ -14,7 +15,6 @@
         color: #f2f2f2;
       }
     </style>
-    <link rel="stylesheet" href="/src/styles/main.scss" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -189,15 +189,15 @@
 
     <main class="contact-showcase">
       <div class="contact-showcase__inner">
-        <h1 class="contact-showcase__title">榮耀團隊</h1>
+        <h1 class="contact-showcase__title" data-i18n="contact_team_title">榮耀團隊</h1>
         <p class="contact-showcase__subtitle">
-          如需諮詢合作或服務細節，歡迎由官方聯絡方式與我們接洽。<br />
-          請務必確認官方帳號，以保障您的權益與資訊安全。
+          <span data-i18n="contact_team_subtitle_line1">如需諮詢合作或服務細節，歡迎由官方聯絡方式與我們接洽。</span><br />
+          <span data-i18n="contact_team_subtitle_line2">請務必確認官方帳號，以保障您的權益與資訊安全。</span>
         </p>
 
         <div class="contact-cards">
           <article class="contact-card">
-            <h2 class="contact-card__title">官方商務</h2>
+            <h2 class="contact-card__title" data-i18n="contact_card_business">官方商務</h2>
             <a
               class="contact-card__qr-link"
               href="./src/assets/img/img_qrcode_tg.jpg"
@@ -209,12 +209,12 @@
             </a>
             <a class="contact-card__action-btn" href="https://t.me/Y_88GT88GT" target="_blank" rel="noopener noreferrer">
               <img src="./src/assets/icon/Telegram.svg" alt="" aria-hidden="true" />
-              <span>@Y_88GT88GT</span>
+              <span data-i18n="contact_tg_account">@Y_88GT88GT</span>
             </a>
           </article>
 
           <article class="contact-card">
-            <h2 class="contact-card__title">官方信箱</h2>
+            <h2 class="contact-card__title" data-i18n="contact_card_mail">官方信箱</h2>
             <button
               class="contact-card__action-btn contact-card__action-btn--mail"
               type="button"
@@ -222,12 +222,12 @@
               aria-label="複製官方信箱"
             >
               <img src="./src/assets/icon/mail.svg" alt="" aria-hidden="true" />
-              <span>getglory89@gmail.com</span>
+              <span data-i18n="contact_email_account">Y_88GT88GT@gmail.com</span>
             </button>
           </article>
         </div>
 
-        <p class="contact-showcase__copyright">GET版權所有</p>
+        <p class="contact-showcase__copyright" data-i18n="contact_copyright">GET版權所有</p>
       </div>
     </main>
 
