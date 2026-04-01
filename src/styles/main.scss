@@ -1094,6 +1094,7 @@ body {
     grid-template-columns: minmax(0, 1fr) minmax(280px, 38%);
     gap: 24px;
     align-items: start;
+    overflow: visible;
   }
   .advantage-cards {
     min-width: 0;
@@ -1245,7 +1246,7 @@ body {
     }
 
     .main-content {
-      overflow-x: hidden;
+      overflow: visible;
     }
 
     .title-group {
